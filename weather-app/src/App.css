@@ -1,0 +1,130 @@
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  background: #7db3d3;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* SEARCH BAR */
+
+.searchBox {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  background: #d9d9d9;
+}
+
+.button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.mainWeather {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+
+.leftPanel {
+  text-align: center;
+}
+
+.leftPanel img {
+  width: 120px;
+}
+
+.temp {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.rightPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoCard {
+  background: #d9d9d9;
+  padding: 40px;
+  border-radius: 6px;
+  text-align: center;
+  color: black;
+}
+
+.forecastBox {
+  background: #d9d9d9;
+  padding: 20px;
+  border-radius: 6px;
+
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+}
+
+.forecastCard {
+  min-width: 80px;
+  text-align: center;
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  color: black;
+}
+
+.forecastCard img {
+  width: 40px;
+}
+
+
+
+.default {
+  background: linear-gradient(to bottom, #89cff0, #dff6ff);
+}
+
+.sunny {
+  background: linear-gradient(to bottom, #fceabb, #f8b500);
+}
+
+.cloudy {
+  background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+}
+
+.rainy {
+  background: linear-gradient(to bottom, #4b79a1, #283e51);
+}
+
+.snowy {
+  background: linear-gradient(to bottom, #e6dada, #274046);
+}
+
+.stormy {
+  background: linear-gradient(to bottom, #232526, #414345);
+}
